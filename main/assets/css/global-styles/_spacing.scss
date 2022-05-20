@@ -1,0 +1,38 @@
+// Dynamic Spacing Synchronized with Font Spacing
+
+:root {
+    --space-4xs: clamp(0.13rem, calc(0.13rem + 0.00vw), 0.13rem);
+    --space-3xs: clamp(0.25rem, calc(0.25rem + 0.00vw), 0.25rem);
+    --space-2xs: clamp(0.50rem, calc(0.50rem + 0.00vw), 0.50rem);
+    --space-xs: clamp(0.69rem, calc(0.67rem + 0.09vw), 0.75rem);
+    --space-s: clamp(0.94rem, calc(0.92rem + 0.09vw), 1.00rem);
+    --space-md: clamp(1.44rem, calc(1.42rem + 0.09vw), 1.50rem);
+    --space-lg: clamp(1.88rem, calc(1.83rem + 0.19vw), 2.00rem);
+    --space-xl: clamp(2.81rem, calc(2.75rem + 0.28vw), 3.00rem);
+    --space-2xl: clamp(3.31rem, calc(3.25rem + 0.28vw), 3.50rem);
+    --space-3xl: clamp(4.94rem, calc(4.83rem + 0.47vw), 5.25rem);
+    --space-4xl: clamp(5.63rem, calc(5.49rem + 0.56vw), 6.00rem);
+    --space-5xl: clamp(8.00rem, calc(7.82rem + 0.75vw), 8.50rem);
+
+    /* One-up pairs */
+    --space-4xs-3xs: clamp(0.13rem, calc(0.08rem + 0.19vw), 0.25rem);
+    --space-3xs-2xs: clamp(0.25rem, calc(0.16rem + 0.38vw), 0.50rem);
+    --space-2xs-xs: clamp(0.50rem, calc(0.41rem + 0.38vw), 0.75rem);
+    --space-xs-s: clamp(0.69rem, calc(0.58rem + 0.47vw), 1.00rem);
+    --space-s-md: clamp(0.94rem, calc(0.74rem + 0.85vw), 1.50rem);
+    --space-md-lg: clamp(1.44rem, calc(1.24rem + 0.85vw), 2.00rem);
+    --space-lg-xl: clamp(1.88rem, calc(1.48rem + 1.69vw), 3.00rem);
+    --space-xl-2xl: clamp(2.81rem, calc(2.57rem + 1.03vw), 3.50rem);
+    --space-2xl-3xl: clamp(3.31rem, calc(2.63rem + 2.91vw), 5.25rem);
+    --space-3xl-4xl: clamp(4.94rem, calc(4.56rem + 1.60vw), 6.00rem);
+
+
+  /* Custom pairs */
+    --space-l-3xl: clamp(1.88rem, calc(0.69rem + 5.07vw), 5.25rem);
+    --space-l-4xl: clamp(1.88rem, calc(0.42rem + 6.20vw), 6.00rem);
+    --space-m-3xl: clamp(1.44rem, calc(0.10rem + 5.73vw), 5.25rem);
+    --space-m-4xl: clamp(1.44rem, calc(-0.17rem + 6.85vw), 6.00rem);
+    --space-m-5xl: clamp(1.44rem, calc(-1.05rem + 10.61vw), 8.50rem);
+    --space-l-5xl: clamp(1.88rem, calc(-0.46rem + 9.95vw), 8.50rem);
+    --component-padding: var(--space-md);
+}
