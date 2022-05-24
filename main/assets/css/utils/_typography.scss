@@ -24,38 +24,45 @@
   --text-unit: 15px;
 }
 
-.text-200 {
-  font-size: var(--text-xs, 0.6875rem);
+.text--2 {
+  font-size: var(--step--2, 0.6875rem);
 }
 
-.text-300 {
-  font-size: var(--text-sm, 0.75rem);
+.text--1 {
+  font-size: var(--step--1, 0.75rem);
 }
 
-.text-400 {
-  font-size: var(--text-md, 1rem);
+.text-0 {
+  font-size: var(--step-0, 1rem);
 }
 
-.text-500 {
-  font-size: var(--text-lg, 1.125rem);
+.text-1 {
+  font-size: var(--step-1, 1.125rem);
 }
 
-.text-600 {
-  font-size: var(--text-xl, 1.375rem);
+.text-2 {
+  font-size: var(--step-2, 1.375rem);
 }
 
-.text-700 {
-  font-size: var(--text-xxl, 1.75rem);
+.text-3 {
+  font-size: var(--step-3, 1.75rem);
 }
 
-.text-800 {
-  font-size: var(--text-xxxl, 2rem);
+.text-4 {
+  font-size: var(--step-4, 2rem);
 }
 
-.text-900 {
-  font-size: var(--text-xxxxl, 2.5rem);
+.text-5 {
+  font-size: var(--step-5, 2.5rem);
 }
 
+.text-6 {
+  font-size: var(--step-6, 2.5rem);
+}
+
+.text-7 {
+  font-size: var(--step-7, 2.5rem);
+}
 
 
 // --------------------------------
