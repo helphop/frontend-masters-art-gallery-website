@@ -3991,7 +3991,7 @@ html:not(.js) .no-js\:is-hidden {
   --page-padding: var(--space-xs-5xl);
   padding-inline: var(--page-padding);
 }
-.index .header-image {
+.index .hero {
   margin-inline: calc(-1 * var(--page-padding));
 }
 .index header.flow {
