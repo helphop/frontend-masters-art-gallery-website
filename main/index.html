@@ -9,25 +9,28 @@
 </head>
 <body class="index">
   <div class="wrapper | flow">
-   <header class="flow | center">
+
+   <header class="flow">
       <div class="header-image">
         <img src="assets/images/mobile/image-hero@2x.jpg" alt="Two people looking at a photo of a man wearing glasses.">
       </div>
-      <h1 class="text-7 font-display text-uppercase color-primary">Modern Art Gallery</h1>
-      <p class="max-inline-size:measure">
-        The arts in the collection of the Modern Art Gallery all started
-        from a spark of inspiration. Will these pieces inspire you? Visit
-        us and find out.
-      </p>
-      <a class="btn-primary" href="location.html">
-        <span class="text-uppercase">Our location</span>
-        <img src="assets/images/icon-arrow-right.svg" alt="Arrow pointing to the right.">
-      </a>
+      <div class="header-content | center flow">
+        <h1 class="text-7 font-display text-uppercase color-primary">Modern Art Gallery</h1>
+        <p class="max-inline-size:measure">
+          The arts in the collection of the Modern Art Gallery all started
+          from a spark of inspiration. Will these pieces inspire you? Visit
+          us and find out.
+        </p>
+        <a class="btn-primary" href="location.html">
+          <span class="text-uppercase">Our location</span>
+          <img src="assets/images/icon-arrow-right.svg" alt="Arrow pointing to the right.">
+        </a>
+      </div>
   </header>
 
   <main>
-    <section class="tour">
-      <picture>
+    <section class="tour | center">
+      <picture class="width-100% aspect-ratio-1:1">
         <source media="(min-width: 900px)"
         srcset="assets/images/desktop/image-grid-1.jpg 1x,
                 assets/images/desktop/image-grid-1@2x.jpg 2x" >
@@ -46,7 +49,7 @@
           our artists. Dive into the details of their creative process.
         </p>
       </div>
-      <picture>
+      <picture class="width-100% aspect-ratio-9:16">
         <source media="(min-width: 900px)" srcset="assets/images/desktop/image-grid-2.jpg 1x,
                       assets/images/desktop/image-grid-2@2x.jpg 2x">
         <source media="(min-width: 600px)" srcset="assets/images/tablet/image-grid-2.jpg 1x,
@@ -54,7 +57,7 @@
         <img src="assets/images/mobile/image-grid-2.jpg" srcset="assets/images/mobile/image-grid-2.jpg 1x,
                         assets/images/mobile/image-grid21@2x.jpg 2x" alt="corner of large room with paintings on the wall">
       </picture>
-      <picture>
+      <picture class="width-100% aspect-ratio-3:2">
         <source media="(min-width: 900px)" srcset="assets/images/desktop/image-grid-3.jpg 1x,
                       assets/images/desktop/image-grid-3@2x.jpg 2x">
         <source media="(min-width: 600px)" srcset="assets/images/tablet/image-grid-3.jpg 1x,
@@ -73,10 +76,10 @@
 
   <footer class="bg-primary">
     <div class="black-box | switcher">
-        <div class="footer-logo">
+      <div class="footer-logo">
         <img src="assets/images/logo-light.svg" alt="Modern Art Gallery Text.">
       </div>
-      <p class="color-white text--1">The Modern Art Gallery is free to all visitors and open seven days a week
+      <p class="footer-details color-white text--1">The Modern Art Gallery is free to all visitors and open seven days a week
         from 8am to 9pm. Find us at 99 King Street, Newport, USA</p>
       <div class="social">
         <img src="assets/images/icon-facebook.svg" alt="The letter F inside a  box.">

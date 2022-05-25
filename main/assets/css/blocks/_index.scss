@@ -1,3 +1,5 @@
+@use 'global-styles/breakpoints' as *;
+
 .index {
 
   .wrapper.flow {
@@ -32,9 +34,29 @@
 
   footer .switcher {
     --switch-gap: var(--space-l);
+
+    > :nth-child(2) {
+      --measure: 37ch;
+      flex-grow: 3;
+    }
   }
+
+  .footer-logo {
+    max-width: fit-content;
+  }
+
   .social {
     display: flex;
     gap: var(--space-s);
+    > * {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @include for-tablet-portrait-up {
+    .social {
+      justify-content: flex-end;
+    }
   }
 }
