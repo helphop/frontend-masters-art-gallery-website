@@ -1,0 +1,40 @@
+.index {
+
+  .wrapper.flow {
+    --flow-space: var(--space-4xl);
+  }
+
+  .wrapper > * {
+    --page-padding: var(--space-xs-5xl);
+    padding-inline: var(--page-padding);
+  }
+
+  .header-image {
+    margin-inline: calc(-1 * var(--page-padding));
+  }
+
+  header.flow {
+    --flow-space: var(--space-m);
+  }
+
+  .tour {
+    display: grid;
+    justify-items: center;
+    gap: var(--space-s);
+  }
+
+  .black-box {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding-inline: var(--space-s);
+    padding-block: var(--space-l);
+  }
+
+  footer .switcher {
+    --switch-gap: var(--space-l);
+  }
+  .social {
+    display: flex;
+    gap: var(--space-s);
+  }
+}
