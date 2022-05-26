@@ -11,14 +11,16 @@
   <div class="wrapper | flow">
 
    <header class="flow">
-      <div class="hero aspect-ratio-3:2">
-          <img src="assets/images/mobile/image-hero@2x.jpg"
+      <div class="hero">
+        <picture>
+          <img class="hero-image" src="assets/images/mobile/image-hero@.jpg"
             srcset="assets/images/mobile/image-hero.jpg 1x,
                     assets/images/mobile/image-hero@2x.jpg 2x"
             alt="Two people looking at a photo of a man wearing glasses.">
+        </picture>
       </div>
-      <div class="header-content | center flow">
-        <h1 class="text-7 font-display text-uppercase color-primary">Modern Art Gallery</h1>
+      <div class="header-content | flow inline-padding">
+        <h1 class="text-7 font-display text-uppercase color-primary">Modern <br> Art Gallery</h1>
         <p class="max-inline-size:measure">
           The arts in the collection of the Modern Art Gallery all started
           from a spark of inspiration. Will these pieces inspire you? Visit
@@ -31,7 +33,7 @@
       </div>
   </header>
 
-  <main>
+  <main class="inline-padding">
     <section class="tour | center">
       <picture class="width-100% aspect-ratio-1:1">
         <source media="(min-width: 900px)"
@@ -85,7 +87,7 @@
     </section>
   </main>
 
-  <footer class="bg-primary">
+  <footer class="bg-primary inline-padding">
     <div class="black-box | switcher">
       <div class="footer-logo">
         <img src="assets/images/logo-light.svg" alt="Modern Art Gallery Text.">
