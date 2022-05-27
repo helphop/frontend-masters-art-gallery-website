@@ -26,6 +26,13 @@
     gap: var(--space-m);
   }
 
+  .black-box {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding-inline: var(--space-m-l);
+    padding-block: var(--space-xl-2xl);
+  }
+
   .tour {
     display: grid;
     gap: var(--space-2xs);
@@ -36,14 +43,8 @@
     }
   }
 
-  .black-box {
-    // display: grid;
-    // place-content: center;
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    padding-inline: var(--space-m-l);
-    padding-block: var(--space-xl-2xl);
-  }
+
+
 
   footer .switcher {
     --switch-gap: var(--space-l);
