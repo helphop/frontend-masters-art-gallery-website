@@ -30,5 +30,6 @@
     --space-xs-5xl: clamp(0.88rem, calc(-2.45rem + 14.18vw), 10.31rem);
     --space-s-l: clamp(1.13rem, calc(0.55rem + 2.44vw), 2.75rem);
     --space-xs-4xl: clamp(0.88rem, calc(-1.72rem + 11.08vw), 8.25rem);
+    --space-xl-5xl: clamp(3.38rem, calc(0.93rem + 10.42vw), 10.31rem);
     --component-padding: var(--space-md);
 }
