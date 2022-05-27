@@ -83,7 +83,7 @@
   --step-3: clamp(1.94rem, calc(1.68rem + 1.11vw), 2.69rem);/* 31.10px -> 42.97 */ //H3
   --step-4: clamp(2.33rem, calc(1.97rem + 1.54vw), 3.36rem);/* 37.32px -> 53.71px */
   --step-5: clamp(2.80rem, calc(2.31rem + 2.10vw), 4.20rem);/* 44.79px  -> 67.14px */ //H2
-  --step-6: clamp(3.36rem, calc(2.70rem + 2.83vw), 5.25rem);/* 53.75px -> 83.92px */
+  --step-6: clamp(3.125rem, 4vw + 1rem, 3.75rem); /* 50px -> 60px */
   --step-7: clamp(4.03rem, calc(3.14rem + 3.79vw), 6.56rem);/* 64.50px -> 104.90px *///H1
 
   // --text-sm: var(--step--1); //15px ->17.60px
