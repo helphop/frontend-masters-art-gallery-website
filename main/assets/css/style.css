@@ -4088,7 +4088,7 @@ footer .social > * {
   .index .tour {
     grid-template-columns: repeat(12, 1fr);
   }
-  .index .tour .white-box {
+  .index .tour .tour-description {
     grid-column: 1/5;
     grid-row: 1;
     align-self: center;

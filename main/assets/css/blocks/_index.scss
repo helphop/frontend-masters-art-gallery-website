@@ -64,7 +64,7 @@
 
     .tour {
       grid-template-columns: repeat(12, 1fr);
-      .white-box {
+      .tour-description {
         grid-column: 1 / 5;
         grid-row: 1;
         align-self: center;
