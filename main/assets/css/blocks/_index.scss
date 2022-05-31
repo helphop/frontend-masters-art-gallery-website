@@ -3,9 +3,9 @@
 .index {
 
   > .wrapper {
-    max-width: 1400px;
+    max-width: 87.5rem;
     margin-inline: auto;
-    .flow {
+    &.flow {
       --flow-space: var(--space-4xl);
     }
   }
@@ -96,7 +96,7 @@
 
     header {
       position: relative;
-      padding-block: 130px 330px;
+      padding-block: 150px 310px;
       background: url('../images/desktop/image-hero.jpg') no-repeat;
 
         @media (-webkit-min-device-pixel-ratio: 2) {

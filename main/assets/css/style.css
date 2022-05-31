@@ -4002,7 +4002,7 @@ footer .switcher > :nth-child(2) {
   --measure: 37ch;
   flex-grow: 2;
 }
-footer .wrapper {
+footer > .wrapper {
   padding-inline: var(--space-m-l);
   padding-block: var(--space-xl-2xl);
 }
@@ -4029,10 +4029,10 @@ footer .social > * {
 }
 
 .index > .wrapper {
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin-inline: auto;
 }
-.index > .wrapper .flow {
+.index > .wrapper.flow {
   --flow-space: var(--space-4xl);
 }
 .index header.flow {
@@ -4114,7 +4114,7 @@ footer .social > * {
 @media (min-width: 973px) {
   .index header {
     position: relative;
-    padding-block: 130px 330px;
+    padding-block: 150px 310px;
     background: url("../images/desktop/image-hero.jpg") no-repeat;
     background-position: center center;
   }
