@@ -4,11 +4,10 @@
 
 // --------------------------------
 
-
 .inline-padding {
-  --page-padding: var(--space-xs-4xl);
   padding-inline: var(--page-padding, 1rem);
 }
+
 .padding-xxxxs {
   padding: var(--space-4xs);
 }

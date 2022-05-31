@@ -32,3 +32,8 @@
     }
   }
 }
+
+.btn-primary[data-style="reverse"] {
+  flex-direction: row-reverse;
+   justify-content: flex-end;
+}

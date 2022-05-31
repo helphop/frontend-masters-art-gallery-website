@@ -1,0 +1,29 @@
+@use 'global-styles/breakpoints' as *;
+
+
+.location {
+
+  header .btn-primary {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .location-details {
+    padding-block: var(--space-l-3xl);
+    --switch-gap: var(--space-m);
+    --threshold: 37.5rem;
+  }
+
+  @include for-tablet-portrait-up {
+    header .btn-primary {
+      left: var(--page-padding);
+    }
+
+    .location-details {
+      h1 {
+          max-width: 8ch;
+        }
+    }
+  }
+}

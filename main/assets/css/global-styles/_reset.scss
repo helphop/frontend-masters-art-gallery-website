@@ -78,6 +78,11 @@ h6 {
   /* optional */
 }
 
+/* defaults to italics which is harder to read so reset to display normal */
+address {
+  font-style: normal;
+}
+
 /* Important to check for
     @media (prefers-reduced-motion: reduce) {}
     and change the animation for those with this preference
