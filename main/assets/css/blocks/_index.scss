@@ -34,7 +34,7 @@
   @include for-tablet-portrait-up {
 
     header {
-      padding-block: 122px;
+      padding-block: 7.625rem;
       background: url('../images/tablet/image-hero.jpg') no-repeat;
       @media (-webkit-min-device-pixel-ratio: 2) {
         background: url('../images/tablet/image-hero@2x.jpg') no-repeat;
@@ -84,11 +84,10 @@
       position: relative;
       padding-block: 9.375rem 19.375rem;
       background: url('../images/desktop/image-hero.jpg') no-repeat;
-
+      background-position: center center;
         @media (-webkit-min-device-pixel-ratio: 2) {
           background: url('../images/desktop/image-hero@2x.jpg') no-repeat;
         }
-      background-position: center center;
 
       &:before {
         content: '';
@@ -98,15 +97,14 @@
         background-color: var(--color-primary);
         z-index: -1;
       }
-      }
+    }
 
     .header-content {
       grid-template-columns: 1fr 24ch;
       justify-content: space-between;
       h1 {
-        color: var(--color-white);
-        mix-blend-mode: difference;
-        filter: brightness(1.5);
+      color: var(--color-white);
+      mix-blend-mode: difference;
       }
       > :not(:first-child) {
         grid-column: 2;
