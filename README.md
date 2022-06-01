@@ -33,8 +33,8 @@ Could I apply CUBE CSS, Every Layout, Utopia and CodyHouse to make web developme
 
 ### Links
 
-- Solution URL: [https://helphop.github.io/frontend-masters-art-gallery-website/](https://helphop.github.io/frontend-masters-art-gallery-website/)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/helphop/frontend-masters-art-gallery-website](https://github.com/helphop/frontend-masters-art-gallery-website)
+- Live Site URL: [https://helphop.github.io/frontend-masters-art-gallery-website/](https://helphop.github.io/frontend-masters-art-gallery-website/)
 
 ## My process
 I created scss files for layouts from Every Layout. I put these in a directory I called compositions under the css directory.
