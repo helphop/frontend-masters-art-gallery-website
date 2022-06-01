@@ -6,17 +6,17 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/leaflet/leaflet.css" />
+    <script src="assets/js/leaflet/leaflet.js" defer></script>
     <title>Frontend Mentor | Art gallery website</title>
   </head>
   <body class="location">
     <div class="wrapper">
+
       <header>
-        <a class="btn-primary" href="index.html" data-style="reverse">
-          <span class="text-uppercase">Back to Home</span>
-          <img src="assets/images/icon-arrow-left.svg" alt="Arrow pointing to the left.">
-        </a>
         <div class="hero">
-          <picture>
+            <div id="mapContainer"></div>
+          <!-- <picture>
             <source media="(min-width: 900px)"
               srcset="assets/images/desktop/image-map.png 1x,
                       assets/images/desktop/image-map@2x.png 2x">
@@ -28,8 +28,12 @@
                 srcset="assets/images/mobile/image-map.png 1x,
                         assets/images/mobile/image-map@2x.png 2x"
               alt="Road map of Newport">
-          </picture>
+          </picture> -->
         </div>
+        <a class="btn-primary" href="index.html" data-style="reverse">
+          <span class="text-uppercase">Back to Home</span>
+          <img src="assets/images/icon-arrow-left.svg" alt="Arrow pointing to the left.">
+        </a>
       </header>
 
       <main>
@@ -42,7 +46,7 @@
               RI 02840 <br>
               United States of America
             </address>
-            <p>
+            <p class="location-description">
               Our newly opened gallery is located near the Edward King House on 99 King
               Street, the Modern Art Gallery is free to all visitors and open seven days
               a week from 8am to 9pm.
@@ -67,5 +71,6 @@
       </footer>
 
     </div>
+      <script src="assets/js/map.js" defer></script
   </body>
 </html>

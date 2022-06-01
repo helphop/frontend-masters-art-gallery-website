@@ -3,16 +3,25 @@
 
 .location {
 
-  header .btn-primary {
-    position: absolute;
-    top: 0;
-    left: 0;
+  header {
+    #mapContainer {
+    min-height: clamp(550px, 140vw, 600px);
+    }
+    .btn-primary {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
   .location-details {
     padding-block: var(--space-l-3xl);
     --switch-gap: var(--space-m);
     --threshold: 37.5rem;
+    justify-content: space-between;
+    :last-child {
+      max-inline-size: 37ch;
+    }
   }
 
   @include for-tablet-portrait-up {
@@ -20,10 +29,8 @@
       left: var(--page-padding);
     }
 
-    .location-details {
-      h1 {
-          max-width: 8ch;
-        }
+    &-details h1 {
+      max-width: 8ch;
     }
   }
 }

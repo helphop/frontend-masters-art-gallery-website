@@ -1,42 +1,41 @@
 const map = document.getElementById('mapContainer')
 
 if (elementExists(map)) {
-  //Toronto Map
-	const coordinatesTen = [36.17006, -86.78382];
-  const coordinatesTex = [32.51935, -94.474008];
-  const coordinatesUSA = [34.91735, -90.92906];
-  const details = document.querySelector('.details');
 
-	const mapUSA = L.map('mapContainer').setView(coordinatesUSA, 5.5);
-	createMapTile(mapUSA);
-	const markerTen = L.marker(coordinatesTen).addTo(mapUSA);
-  const markerTex = L.marker(coordinatesTex).addTo(mapUSA);
+  var mapIcon = L.icon({
+    iconUrl: 'assets/images/icon-location.svg',
+    iconSize: [66, 99],
+    shadowSize: [0, 0],
+    iconAnchor: [33, 45],
+    shadowAnchor: [0, 0],
+    popupAnchor: [-3, -76]
+
+  });
+
+
+  //Location Map
+	const coordinatesHeadOffice = [41.48149310921016, -71.310360301230182];
+
+	const mapHeadOffice = L.map('mapContainer').setView(coordinatesHeadOffice,15);
+	createMapTile(mapHeadOffice);
+  addPopup(coordinatesHeadOffice, mapHeadOffice);
 
   //Setup how the user interacts with the map
-	setMapControl(mapUSA);
-
-  details.addEventListener('click', (e) => {
-    e.preventDefault()
-    link = e.target;
-    addressId = link.dataset.addressId;
-    address = document.getElementById(addressId).textContent;
-    title = document.getElementById(link.dataset.titleId).textContent;
-    marker = addressId === "mainOffice" ? markerTen : markerTex;
-    openMarkerPopup(marker, address, title);
-  })
-
-  function openMarkerPopup(marker, address, title) {
-    marker.bindPopup(`<span class='font-bold'>${title}</span><br>${address}.`).openPopup();
-  }
+	setMapControl(mapHeadOffice);
 
   function createMapTile(mapName) {
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-			maxZoom: 10,
+			maxZoom: 20,
 			tileSize: 512,
 			zoomOffset: -1,
 		}).addTo(mapName);
 	}
+
+  function addPopup(coordinates, mapName) {
+    L.marker(coordinates, {icon: mapIcon}).addTo(mapName)
+    .openPopup();
+  }
 
   //disable scroll zoom until user clicks on map
 	function setMapControl(mapName){
@@ -46,3 +45,8 @@ if (elementExists(map)) {
 	}
 
 }
+
+  //used to detect if element is present on page
+  function elementExists(elem) {
+    return (typeof(elem) != 'undefined' && elem != null)
+  }

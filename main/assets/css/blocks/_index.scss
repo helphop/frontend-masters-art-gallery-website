@@ -2,12 +2,8 @@
 
 .index {
 
-  > .wrapper {
-    max-width: 87.5rem;
-    margin-inline: auto;
-    &.flow {
-      --flow-space: var(--space-4xl);
-    }
+  > .wrapper.flow {
+     --flow-space: var(--space-4xl);
   }
 
   header.flow {
