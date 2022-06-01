@@ -15,8 +15,6 @@
     gap: var(--space-m);
   }
 
-
-
   .tour {
     display: grid;
     gap: var(--space-s-2xs);
@@ -83,7 +81,7 @@
 
     header {
       position: relative;
-      padding-block: 150px 310px;
+      padding-block: 9.375rem 19.375rem;
       background: url('../images/desktop/image-hero.jpg') no-repeat;
 
         @media (-webkit-min-device-pixel-ratio: 2) {
