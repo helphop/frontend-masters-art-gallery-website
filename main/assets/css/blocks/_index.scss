@@ -2,8 +2,9 @@
 
 .index {
 
-  > .wrapper.flow {
-     --flow-space: var(--space-4xl);
+  > .wrapper {
+    justify-content: space-between;
+    gap: var(--space-xl);
   }
 
   header.flow {
