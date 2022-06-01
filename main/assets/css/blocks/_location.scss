@@ -5,12 +5,14 @@
 
   header {
     #mapContainer {
+  position: relative;
     min-height: clamp(550px, 140vw, 600px);
     }
     .btn-primary {
       position: absolute;
       top: 0;
       left: 0;
+      z-index: var(--z-index-important);
     }
   }
 
