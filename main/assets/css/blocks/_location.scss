@@ -4,8 +4,15 @@
 .location {
 
   header {
+    /* stretch this element to fill vertical space */
+    flex-grow: 1;
+    min-height: 100%;
+
+    /* default for grid is columns and stretch so mapContainer will fill vertical space */
+    display: grid;
+
     #mapContainer {
-  position: relative;
+    position: relative;
     min-height: clamp(550px, 140vw, 600px);
     }
     .btn-primary {
