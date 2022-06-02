@@ -4,7 +4,9 @@
 .location {
 
   header {
-    /* stretch this element to fill vertical space */
+    /* header is a flex item of the .wrapper element
+       stretch this element to fill vertical space
+       */
     flex-grow: 1;
     min-height: 100%;
 

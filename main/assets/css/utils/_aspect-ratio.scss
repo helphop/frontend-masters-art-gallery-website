@@ -6,8 +6,8 @@
 
 [class^="aspect-ratio"],
 [class*=" aspect-ratio"] {
-  --n: 16;
-  --d: 9;
+  --n: 16; //w
+  --d: 9; //h
   --aspect-ratio: calc(var(--n)/var(--d)); //w/h
   position: relative;
   height: 0;
